@@ -1,0 +1,3 @@
+1Booking v2.0
+Railway/GitHub-ready deployment build
+Storage: JSON-file based prototype storage

@@ -1,0 +1,9 @@
+{
+  "biometric_enabled": true,
+  "multiple_shows_enabled": true,
+  "qr_ticket_enabled": true,
+  "ticket_cancellation_enabled": true,
+  "require_adjacent_seats": true,
+  "demo_data_enabled": true,
+  "updated_at": ""
+}

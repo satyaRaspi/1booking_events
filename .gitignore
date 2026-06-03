@@ -1,0 +1,24 @@
+# Python
+backend/venv/
+backend/__pycache__/
+*.pyc
+.env
+*.env
+
+# Node
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+yarn-error.log*
+
+# Runtime/generated files
+backend/generated_tickets/*.pdf
+backend/generated_tickets/*.png
+backend/data/user_activity_logs.json
+backend/data/abandoned_carts.json
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
