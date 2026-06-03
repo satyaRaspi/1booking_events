@@ -1,4 +1,4 @@
-1Booking v2.0.2
+1Booking v2.0.3
 Railway/GitHub-ready deployment build
-Update: Added Truflux Technologies footer across the application.
+Fix: Railway blank screen/API fallback issue. Frontend now uses same-origin API in Railway.
 Storage: JSON-file based prototype storage

@@ -16,7 +16,7 @@ import AnalyticsReportPage from "./pages/AnalyticsReportPage.jsx";
 import UserActivityLogPage from "./pages/UserActivityLogPage.jsx";
 import AppFooter from "./components/AppFooter";
 
-const API = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_BASE_URL || (window.location.port === "5173" ? "http://127.0.0.1:8000" : "");
 
 const primaryTabs = [
   { id: "events", label: "Events", icon: "▦" },
