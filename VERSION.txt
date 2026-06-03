@@ -1,3 +1,4 @@
-1Booking v2.0
+1Booking v2.0.1
 Railway/GitHub-ready deployment build
+Fix: Railway root URL now serves the React frontend. API health is at /api/health.
 Storage: JSON-file based prototype storage

@@ -1028,9 +1028,9 @@ def ensure_default_admin():
 ensure_default_admin()
 
 
-@app.get("/")
+@app.get("/api/health")
 def health():
-    return {"status": "OK", "message": "Biometric Ticket Booking API is running"}
+    return {"status": "OK", "message": "1Booking API is running"}
 
 
 
