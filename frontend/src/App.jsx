@@ -14,6 +14,7 @@ import AudienceBookingsPage from "./pages/AudienceBookingsPage.jsx";
 import WorkflowConfigurationPage from "./pages/WorkflowConfigurationPage.jsx";
 import AnalyticsReportPage from "./pages/AnalyticsReportPage.jsx";
 import UserActivityLogPage from "./pages/UserActivityLogPage.jsx";
+import AppFooter from "./components/AppFooter";
 
 const API = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
@@ -168,8 +169,11 @@ export default function App() {
             </button>
           ))}
         </nav>
-        {activeTab === "booking" && canAccess("booking") && <SeatBookingPage currentUser={currentUser} />}
-        {activeTab === "myBookings" && canAccess("myBookings") && <AudienceBookingsPage currentUser={currentUser} />}
+        <main className="audience-main-content">
+          {activeTab === "booking" && canAccess("booking") && <SeatBookingPage currentUser={currentUser} />}
+          {activeTab === "myBookings" && canAccess("myBookings") && <AudienceBookingsPage currentUser={currentUser} />}
+        </main>
+        <AppFooter />
       </div>
     );
   }
@@ -262,6 +266,7 @@ export default function App() {
           {activeTab === "activityLogs" && canAccess("activityLogs") && <UserActivityLogPage />}
           {activeTab === "admin" && canAccess("admin") && <AdminDashboard />}
         </section>
+        <AppFooter />
       </main>
     </div>
   );
